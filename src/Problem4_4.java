@@ -13,7 +13,13 @@ public class Test {
         System.out.print("}\n");
         Scanner scan = new Scanner(System.in);
         System.out.print("Input the desired number: ");
-        int a = scan.nextInt();
+        int a = 0;
+        if (scan.hasNextInt()) {
+        	a = scan.nextInt();
+        } else {
+        	System.out.println("Invalid input!");
+        	System.exit(0);
+        }
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == a) {
