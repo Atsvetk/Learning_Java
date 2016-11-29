@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Problem4-3 {
+public class Problem4_3 {
     public static void main(String[] args) {
         int[] A = new int[]{1, -5, 6, 4, 0, 1, -1};
         boolean flag = false;
