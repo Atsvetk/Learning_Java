@@ -1,20 +1,28 @@
 import java.util.Scanner;
+import java.util.Random;
 
-public class Problem4_4 {
+public class Test {
     public static void main(String[] args) {
-        int[] A = new int[]{1, -5, 6, 4, 0, 1, -1, -5, 6, 6, 4, 3, 0, -5};
+        int[] arr = new int[25];
+        Random rand = new Random();
+        System.out.print("{ ");
+        for (int i = 0; i < 25; i++) {
+        	arr[i] = (rand.nextInt(21) - 10);
+        	System.out.print(arr[i] + " ");
+        }
+        System.out.print("}\n");
         Scanner scan = new Scanner(System.in);
         System.out.print("Input the desired number: ");
         int a = scan.nextInt();
         int count = 0;
-        for (int i = 0; i < A.length; i++) {
-            if (A[i]==a) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == a) {
                 count++;
             }
         }
         float c = count;
-        float freq = c/A.length;
+        float freq = c / arr.length;
         System.out.println("Your number (" + a + ") is included in the array for " + count + " times.");
-        System.out.println("Frequency = " + freq);
+        System.out.println("Frequency = " + freq + ".");
     }
 }
