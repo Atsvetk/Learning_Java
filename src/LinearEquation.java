@@ -5,9 +5,9 @@ public class LinearEquation {
 
 	private static boolean isOK(float obj, String param) {
 		boolean quiteOK = false;
-		if ( !Float.isNaN(obj) && !Float.isInfinite(obj) ) {
+		if (!Float.isNaN(obj) && !Float.isInfinite(obj)) {
 			quiteOK = true;
-			if (param!="0" && obj==0) {
+			if (param != "0" && obj == 0) {
 				quiteOK = false;
 			}
 		}
@@ -24,12 +24,15 @@ public class LinearEquation {
         
         float a = 0;
         System.out.print("Input a: ");
-        if (scan.hasNextFloat()) {
+        if ( scan.hasNextFloat() ) {
             a = scan.nextFloat();
         } else {
-            System.out.println("This is not a number! I'll set a = 1 for you.\n");
-            a = 1;
-
+        	System.out.println("Invalid input!");
+            System.exit(0);
+        }
+        if (!isOK(a, "all")) {
+        	System.out.println("Invalid input!");
+            System.exit(0);
         }
         scan.nextLine();
         float b = 0;
@@ -37,17 +40,18 @@ public class LinearEquation {
         if (scan.hasNextFloat()) {
             b = scan.nextFloat();
         } else {
-                System.out.println("This is not a number! I'll set b = 1 for you.\n");
-                b = 1;
+        	System.out.println("Invalid input!");
+        	System.exit(0);
         }
+        if (!isOK(b, "0")) {
+        	System.out.println("Invalid input!");
+            System.exit(0);
+        }
+        
     	float x = 0;
-    	if (isOK(a, "all") && isOK(b, "0")) { 
-    		x = -b/a;
-            System.out.println("x = " + x);
-        }
-        else {
-            System.out.println("No decent equation to solve.");
-        }
+    	x = -b / a;
+        System.out.println("x = " + x);
+        
         scan.close();
     }
 }
