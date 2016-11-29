@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Locale;
 
-public class problem_1_3 {
+public class Problem1-3 {
 	
 	private static boolean isOK(double obj) {
 		boolean quiteOK = false;
