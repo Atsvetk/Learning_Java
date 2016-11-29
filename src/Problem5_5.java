@@ -4,7 +4,13 @@ public class Problem5_5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Input the number: ");
-        int n = scan.nextInt();
+        int n = 0;
+        if (scan.hasNextInt()) {
+        	n = scan.nextInt();
+        } else {
+        	System.out.println("Invalid input!");
+        	System.exit(0);
+        }
         int result_2 = n >> 1;
         int result_4 = n >> 2;
         int result_8 = n >> 3;
