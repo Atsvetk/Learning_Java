@@ -1,4 +1,4 @@
-public class Problem4-1 {
+public class Problem4_1 {
     public static void main(String[] args) {
         int[] A = new int[]{1, -5, 6, 4, 0, 1, -1};
         int sum = 0;
