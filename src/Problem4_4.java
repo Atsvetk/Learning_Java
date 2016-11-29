@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class problem_4_4 {
+public class Problem4_4 {
     public static void main(String[] args) {
         int[] A = new int[]{1, -5, 6, 4, 0, 1, -1, -5, 6, 6, 4, 3, 0, -5};
         Scanner scan = new Scanner(System.in);
