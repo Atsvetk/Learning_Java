@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-public class problem_1_1 {
+public class Problem1-1 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Введите число: ");
+		System.out.print("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
 		if (scan.hasNextInt()) {
 			int n = scan.nextInt();
 			if (n%2==0) {
-				System.out.println("Чётное!");
+				System.out.println("Р§С‘С‚РЅРѕРµ!");
 			} else {
-				System.out.println("Нечётное!");
+				System.out.println("РќРµС‡С‘С‚РЅРѕРµ!");
 			}
 		} else {
-			System.out.println("Нужно было ввести целое число!");
+			System.out.println("РќСѓР¶РЅРѕ Р±С‹Р»Рѕ РІРІРµСЃС‚Рё С†РµР»РѕРµ С‡РёСЃР»Рѕ!");
 		}
 		scan.close();
 	}
