@@ -59,7 +59,7 @@ public class QuadraticEquation {
             if (D > 0) {
                 double x1 = (-b - Math.sqrt(D)) / (2 * a);
                 double x2 = (-b + Math.sqrt(D)) / (2 * a);
-                solution = "Solution: x1 = " + x1 + ";\n\t\t  x2 = " + x2;
+                solution = "Solution:\nx1 = " + x1 + ";\nx2 = " + x2 + ".";
             } else {
                 if (D == 0) {
                     solution = "Solution: x1 = x2 = " + (-b / (2 * a));
