@@ -12,11 +12,11 @@ public class QuadraticEquation {
             value = scan.nextDouble();
             scan.nextLine();
         } else {
-        	System.out.println("Invalid input!");
+            System.out.println("Invalid input!");
             System.exit(0);
         }
-        if ( Double.isNaN(value) || Double.isInfinite(value) ) {
-        	System.out.println("Invalid input!");
+        if (Double.isNaN(value) || Double.isInfinite(value)) {
+            System.out.println("Invalid input!");
             System.exit(0);
         }
         return value;
@@ -30,19 +30,16 @@ public class QuadraticEquation {
 
         String solution = "";
         System.out.println("This is Quadratic Equation(a*x^2 + b*x + c =0) solving program!");
-        
+
         //setting locale to avoid floating dot/comma disaster
-    	Locale.setDefault(Locale.US);
-    	
+        Locale.setDefault(Locale.US);
+
         System.out.println("Tip for floats: Use dots, not commas!");
-        
+
         //Entering equation params
-        double a;
-        a = paramInput("a");
-        double b;
-        b = paramInput("b");
-        double c;
-        c = paramInput("c");
+        double a = paramInput("a");
+        double b = paramInput("b");
+        double c = paramInput("c");
 
         if (a == 0 && b == 0) {
             if (c == 0) {
@@ -54,7 +51,7 @@ public class QuadraticEquation {
         if (a == 0 && b != 0) {
             solution = "Solution: x = " + linearEquation(b, c);
         }
-        if (a!= 0) {
+        if (a != 0) {
             double D = b * b - 4 * a * c;
             if (D > 0) {
                 double x1 = (-b - Math.sqrt(D)) / (2 * a);
