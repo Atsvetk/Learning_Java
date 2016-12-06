@@ -12,16 +12,17 @@ public class BubbleSort {
             System.out.print(arr[i] + " ");
         }
         System.out.print("}\n");
-
-        boolean flag = true;
-        while (flag) {
-            flag = false;
+        
+        //Can't stand using a flag here
+        boolean change = true;
+        while (change) {
+            change = false;
             for (int i = 0; i < arr.length - 1; i++) {
                 if (arr[i] > arr[i + 1]) {
                     int tmp = arr[i];
                     arr[i] = arr[i + 1];
                     arr[i + 1] = tmp;
-                    flag = true;
+                    change = true;
                 }
             }
         }
