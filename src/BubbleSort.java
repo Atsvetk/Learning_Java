@@ -12,7 +12,7 @@ public class BubbleSort {
         }
         System.out.print("}\n");
         
-        //Can't stand using a flag here
+        //Can't stop myself from using a flag here
         boolean change = true;
         while (change) {
             change = false;
