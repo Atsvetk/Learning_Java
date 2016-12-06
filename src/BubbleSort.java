@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.util.Random;
 
 public class BubbleSort {
@@ -34,4 +33,3 @@ public class BubbleSort {
 
     }
 }
-
